@@ -1,0 +1,26 @@
+{
+  "name": "linkprotector",
+  "version": "1.0.0",
+  "description": "Simple databaseless website to secure content.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FireStreaker2/LinkProtector.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "FireStreaker2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FireStreaker2/LinkProtector/issues"
+  },
+  "homepage": "https://github.com/FireStreaker2/LinkProtector#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "simple-encryptor": "^4.0.0"
+  }
+}
