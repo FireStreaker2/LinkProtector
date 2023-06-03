@@ -3,7 +3,7 @@
 # About
 LinkProtector is a simple website used to protect content with a password, without the use of databases. Think of it like <a href="https://controlc.com/">controlc.com</a> but without having to mess around with SQL. This is achievable through the use of <a href="https://www.npmjs.com/package/simple-encryptor">``simple-encryptor``</a> and passing encrypted info from the url to the backend, and then decrypting it there. After authenticating, the backend then sends the decrypted content to the frontend. An example is below.    
 
-https://linkprotector.firestreaker2.gq/unlock#83affbda5e745be7106752fb739da25a91ecd9e673947dff1a7350068836ece0baaed7b9ad2c095a6d42636321757469+WoXMcT5WbObLgD38ssi8TREhxyxSceSIHTJa7RygRSLgrTq442smpjNHJqTSG+Hde8ePHGjLVsTcGMMxjn9HvdGgwI5icSHlYJ0u9lFGsI=|f94ac3409950cbb456b575e857b5e3d5bd94d3b19cbab3d196b244c69a8cf74eea078b42e549ee74737016e210e84655GPPXLkTV+XSKt/K5SUE4QQ==  
+``https://linkprotector.firestreaker2.gq/unlock#83affbda5e745be7106752fb739da25a91ecd9e673947dff1a7350068836ece0baaed7b9ad2c095a6d42636321757469+WoXMcT5WbObLgD38ssi8TREhxyxSceSIHTJa7RygRSLgrTq442smpjNHJqTSG+Hde8ePHGjLVsTcGMMxjn9HvdGgwI5icSHlYJ0u9lFGsI=|f94ac3409950cbb456b575e857b5e3d5bd94d3b19cbab3d196b244c69a8cf74eea078b42e549ee74737016e210e84655GPPXLkTV+XSKt/K5SUE4QQ== `` 
 
 Password: ``gura``   
 
