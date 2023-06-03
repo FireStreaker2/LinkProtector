@@ -1,18 +1,25 @@
 const form = document.getElementById("form");
 const content = document.getElementById("content");
 const password = document.getElementById("password");
+const resultContainer = document.getElementById("result");
+const linkBox = document.getElementById("link");
+const linkPassword = document.getElementById("linkPassword");
+const newButton = document.getElementById("new");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    if (content.value.trim() === "" || password.value.trim() === "") {
+    const contentValue = content.value.trim();
+    const passwordValue = password.value.trim()
+
+    if (contentValue=== "" || passwordValue === "") {
         console.error("Please fill in all fields.");
         return;
     }
 
     const data = {
-        content: content.value.trim(),
-        password: password.value.trim()   
+        content: contentValue,
+        password: passwordValue
     };
 
     const options = {
@@ -26,9 +33,18 @@ form.addEventListener("submit", (event) => {
     fetch("/creation", options)
     .then(response => response.json())
     .then(result => {
-        window.location.href = `/unlock#${result.URL}`;
+        var link = `${window.location.origin}/unlock#${result.URL}`
+        form.style.display = "none";
+        resultContainer.style.display = "flex";
+        linkBox.innerHTML = `<a href=${link} target="_blank">${link}</a>`;
+        linkPassword.innerHTML = passwordValue;
     })
     .catch(error => {
         console.error("Error:", error);
     });
+});
+
+newButton.addEventListener("click", () => {
+    form.style.display = "flex";
+    resultContainer.style.display = "none";
 });

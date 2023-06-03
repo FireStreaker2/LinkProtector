@@ -21,11 +21,32 @@
     </head>
 
     <body>
-        <form id="form">
-            <input placeholder="Content" id="content" />
-            <input placeholder="Password" id="password" />
-            <button type="submit">Submit</button>
-        </form>
+        <div id="container">
+            <h1>Create a link now</h1>
+            <form id="form">
+                <input placeholder="Content" id="content" />
+                <input placeholder="Password" id="password" />
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="result">
+                <p>Your Link:</p>
+                <div class="info">
+                    <p id="link"></p>
+                </div>
+                <p>Your Password:</p>
+                <div class="info">
+                    <p id="linkPassword"></p>
+                </div>
+
+                <button id="new">Create new link</button>
+            </div>
+
+            <footer>
+                <a href="https://firestreaker2.gq">Made by FireStreaker2</a> |
+                <a href="https://github.com/FireStreaker2/LinkProtector">GitHub</a>
+            </footer>
+        </div>
 
         <script src="index.js"></script>
     </body>
