@@ -56,8 +56,14 @@ app.post("/verification", (req, res) => {
 
     if (queryPassword === originalPassword) {
         res.json({ URL: content });
+
+        /* uncomment if you want logging */
+        // console.log(`Link has been unlocked.\nURL: ${url}\nPassword: ${originalPassword}\nContent: ${content}`);
     } else {
         res.json({ URL: "Error: Password Incorrect"})
+
+        /* uncomment if you want logging */
+        // console.log(`Link unlocking has been failed.\nURL: ${url}\nPassword: ${originalPassword}\nAttempted Password: ${queryPassword}\nContent: ${content}`);
     }
 });
 
