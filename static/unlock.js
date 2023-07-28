@@ -30,10 +30,10 @@ form.addEventListener("submit", (event) => {
     .then(response => response.json())
     .then(result => {
         console.log(result);
-        content.innerHTML = result.URL;
+        content.textContent = result.URL;
     })
     .catch(error => {
         console.error("Error:", error);
-        content.innerHTML = error;
+        content.textContent = error;
     });
 });
